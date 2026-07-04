@@ -1,0 +1,6 @@
+{
+  "name": "Smart Business Management System PRO",
+  "description": "Production-ready web-based business management system for NYAMATA PREMIUM BAR AND RESTAURANT.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

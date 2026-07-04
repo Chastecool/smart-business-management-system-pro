@@ -1,0 +1,413 @@
+{
+    "users": [
+        {
+            "id": "U-ADMIN",
+            "username": "admin",
+            "name": "Gatera Alphonse (Admin)",
+            "role": "admin",
+            "status": "active",
+            "created_at": "2026-07-03T14:29:31+02:00",
+            "password_hash": "$2y$10$E.k7H1l.MHrrYpTROu24vuFDdw/3.Y7l/lFiTNdh8sR6P0ASWyiJ."
+        },
+        {
+            "id": "U-EMP1",
+            "username": "employee",
+            "name": "Mutangana Jean (Staff)",
+            "role": "employee",
+            "status": "active",
+            "created_at": "2026-07-03T14:29:31+02:00",
+            "password_hash": "$2y$10$i.OTEI/Zjm1wdNExaCqmZOIESNf0n4ClHFxEYqoF8xZddNjqwvp5C"
+        },
+        {
+            "id": "U-EMP2",
+            "username": "marie",
+            "name": "Mukamana Marie (Staff)",
+            "role": "employee",
+            "status": "active",
+            "created_at": "2026-07-03T14:29:31+02:00",
+            "password_hash": "$2y$10$9tufgsoOR0UpQTzFtuRIkOagbosZAHBJ50NXKmqPfmwGKa4us45KG"
+        }
+    ],
+    "employees": [
+        {
+            "id": "E-1",
+            "user_id": "U-EMP1",
+            "name": "Mutangana Jean",
+            "email": "jean@nyamatabar.com",
+            "phone": "+250 788 555 111",
+            "salary": 150000,
+            "status": "active",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "E-2",
+            "user_id": "U-EMP2",
+            "name": "Mukamana Marie",
+            "email": "marie@nyamatabar.com",
+            "phone": "+250 788 555 222",
+            "salary": 140000,
+            "status": "active",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        }
+    ],
+    "categories": [
+        {
+            "id": "CAT-BEER",
+            "name": "Beers & Ciders",
+            "description": "Cold local and imported beers",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "CAT-SPIRIT",
+            "name": "Liquors & Spirits",
+            "description": "Premium spirits, gins, whiskeys and vodkas",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "CAT-SOFT",
+            "name": "Soft Drinks & Water",
+            "description": "Refreshing sodas, energy drinks and pure water",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "CAT-FOOD",
+            "name": "Food & Kitchen",
+            "description": "Delicious local brochettes, potatoes, pork and fish",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "CAT-CIG",
+            "name": "Cigarettes",
+            "description": "Local and imported cigarettes",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        }
+    ],
+    "products": [
+        {
+            "id": "P-1",
+            "name": "Miitzig",
+            "code": "PROD-MIITZIG",
+            "category_id": "CAT-BEER",
+            "current_stock": 0,
+            "minimum_stock": 15,
+            "price": 2000,
+            "cost": 1500,
+            "unit": "Bottle",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "P-2",
+            "name": "P.miitzig",
+            "code": "PROD-PMIITZIG",
+            "category_id": "CAT-BEER",
+            "current_stock": 0,
+            "minimum_stock": 15,
+            "price": 1000,
+            "cost": 750,
+            "unit": "Bottle",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "P-3",
+            "name": "Babuji",
+            "code": "PROD-BABUJI",
+            "category_id": "CAT-SPIRIT",
+            "current_stock": 0,
+            "minimum_stock": 15,
+            "price": 1500,
+            "cost": 1130,
+            "unit": "Bottle",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "P-4",
+            "name": "G.fanta",
+            "code": "PROD-GFANTA",
+            "category_id": "CAT-SOFT",
+            "current_stock": 0,
+            "minimum_stock": 15,
+            "price": 1000,
+            "cost": 750,
+            "unit": "Bottle",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "P-5",
+            "name": "P.fanta",
+            "code": "PROD-PFANTA",
+            "category_id": "CAT-SOFT",
+            "current_stock": 0,
+            "minimum_stock": 15,
+            "price": 700,
+            "cost": 530,
+            "unit": "Bottle",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        }
+    ],
+    "stock_movements": [
+        {
+            "id": "M-5CMOAZVNK",
+            "product_id": "P-5",
+            "quantity": -120,
+            "previous_stock": 120,
+            "new_stock": 0,
+            "movement_type": "daily_report",
+            "reference_type": "daily_report",
+            "reference_id": "DS-GZ429DC8A",
+            "notes": "Adjusted via Daily Stock Report",
+            "created_by_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "M-81IURTPHP",
+            "product_id": "P-4",
+            "quantity": -120,
+            "previous_stock": 120,
+            "new_stock": 0,
+            "movement_type": "daily_report",
+            "reference_type": "daily_report",
+            "reference_id": "DS-2ZTJWAYCU",
+            "notes": "Adjusted via Daily Stock Report",
+            "created_by_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "M-F6PQNIS7P",
+            "product_id": "P-3",
+            "quantity": -120,
+            "previous_stock": 120,
+            "new_stock": 0,
+            "movement_type": "daily_report",
+            "reference_type": "daily_report",
+            "reference_id": "DS-T5YC9OUPS",
+            "notes": "Adjusted via Daily Stock Report",
+            "created_by_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "M-ZWJJXIURY",
+            "product_id": "P-2",
+            "quantity": -120,
+            "previous_stock": 120,
+            "new_stock": 0,
+            "movement_type": "daily_report",
+            "reference_type": "daily_report",
+            "reference_id": "DS-XZYXEBPYT",
+            "notes": "Adjusted via Daily Stock Report",
+            "created_by_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "M-CMEDR3A6T",
+            "product_id": "P-1",
+            "quantity": -120,
+            "previous_stock": 120,
+            "new_stock": 0,
+            "movement_type": "daily_report",
+            "reference_type": "daily_report",
+            "reference_id": "DS-KOM6JDHN5",
+            "notes": "Adjusted via Daily Stock Report",
+            "created_by_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "M-1LB6NARWK",
+            "product_id": "P-1",
+            "quantity": 120,
+            "previous_stock": 0,
+            "new_stock": 120,
+            "movement_type": "in",
+            "reference_type": "initial",
+            "reference_id": "SYSTEM",
+            "notes": "Initial inventory setup",
+            "created_by_name": "System Admin",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "M-CTXLJXS5F",
+            "product_id": "P-2",
+            "quantity": 120,
+            "previous_stock": 0,
+            "new_stock": 120,
+            "movement_type": "in",
+            "reference_type": "initial",
+            "reference_id": "SYSTEM",
+            "notes": "Initial inventory setup",
+            "created_by_name": "System Admin",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "M-1AMMSHJF9",
+            "product_id": "P-3",
+            "quantity": 120,
+            "previous_stock": 0,
+            "new_stock": 120,
+            "movement_type": "in",
+            "reference_type": "initial",
+            "reference_id": "SYSTEM",
+            "notes": "Initial inventory setup",
+            "created_by_name": "System Admin",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "M-HFPAUE1VW",
+            "product_id": "P-4",
+            "quantity": 120,
+            "previous_stock": 0,
+            "new_stock": 120,
+            "movement_type": "in",
+            "reference_type": "initial",
+            "reference_id": "SYSTEM",
+            "notes": "Initial inventory setup",
+            "created_by_name": "System Admin",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        },
+        {
+            "id": "M-0KBA9EIYD",
+            "product_id": "P-5",
+            "quantity": 120,
+            "previous_stock": 0,
+            "new_stock": 120,
+            "movement_type": "in",
+            "reference_type": "initial",
+            "reference_id": "SYSTEM",
+            "notes": "Initial inventory setup",
+            "created_by_name": "System Admin",
+            "created_at": "2026-07-03T14:29:31+02:00"
+        }
+    ],
+    "sales": [],
+    "sale_items": [],
+    "debts": [],
+    "debt_payments": [],
+    "expenses": [],
+    "daily_stock": [
+        {
+            "id": "DS-KOM6JDHN5",
+            "product_id": "P-1",
+            "product_name": "Miitzig",
+            "date": "2026-07-03",
+            "opening_stock": 120,
+            "stock_in": 0,
+            "remaining_stock": 0,
+            "sold_stock": 120,
+            "employee_id": "U-EMP1",
+            "employee_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:11:15+02:00"
+        },
+        {
+            "id": "DS-XZYXEBPYT",
+            "product_id": "P-2",
+            "product_name": "P.miitzig",
+            "date": "2026-07-03",
+            "opening_stock": 120,
+            "stock_in": 0,
+            "remaining_stock": 0,
+            "sold_stock": 120,
+            "employee_id": "U-EMP1",
+            "employee_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:11:15+02:00"
+        },
+        {
+            "id": "DS-T5YC9OUPS",
+            "product_id": "P-3",
+            "product_name": "Babuji",
+            "date": "2026-07-03",
+            "opening_stock": 120,
+            "stock_in": 0,
+            "remaining_stock": 0,
+            "sold_stock": 120,
+            "employee_id": "U-EMP1",
+            "employee_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:11:15+02:00"
+        },
+        {
+            "id": "DS-2ZTJWAYCU",
+            "product_id": "P-4",
+            "product_name": "G.fanta",
+            "date": "2026-07-03",
+            "opening_stock": 120,
+            "stock_in": 0,
+            "remaining_stock": 0,
+            "sold_stock": 120,
+            "employee_id": "U-EMP1",
+            "employee_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:11:15+02:00"
+        },
+        {
+            "id": "DS-GZ429DC8A",
+            "product_id": "P-5",
+            "product_name": "P.fanta",
+            "date": "2026-07-03",
+            "opening_stock": 120,
+            "stock_in": 0,
+            "remaining_stock": 0,
+            "sold_stock": 120,
+            "employee_id": "U-EMP1",
+            "employee_name": "Mutangana Jean (Staff)",
+            "created_at": "2026-07-03T19:11:15+02:00"
+        }
+    ],
+    "notifications": [
+        {
+            "id": "N-TDFHNBLSZ",
+            "title": "Low Stock Alert",
+            "message": "Product \"P.fanta\" has reached low stock! Current: 0 Bottle(s), Min Threshold: 15",
+            "type": "warning",
+            "is_read": false,
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "N-HCFKNGBQO",
+            "title": "Low Stock Alert",
+            "message": "Product \"G.fanta\" has reached low stock! Current: 0 Bottle(s), Min Threshold: 15",
+            "type": "warning",
+            "is_read": false,
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "N-VFDCLSQFY",
+            "title": "Low Stock Alert",
+            "message": "Product \"Babuji\" has reached low stock! Current: 0 Bottle(s), Min Threshold: 15",
+            "type": "warning",
+            "is_read": false,
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "N-8BCZSTE3I",
+            "title": "Low Stock Alert",
+            "message": "Product \"P.miitzig\" has reached low stock! Current: 0 Bottle(s), Min Threshold: 15",
+            "type": "warning",
+            "is_read": false,
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "N-F6WPSSQC3",
+            "title": "Low Stock Alert",
+            "message": "Product \"Miitzig\" has reached low stock! Current: 0 Bottle(s), Min Threshold: 15",
+            "type": "warning",
+            "is_read": false,
+            "created_at": "2026-07-03T19:04:22+02:00"
+        },
+        {
+            "id": "N-LOW-STOCK",
+            "title": "Low Stock Alert",
+            "message": "Product \"Negra Modelo\" is below minimum stock threshold!",
+            "type": "warning",
+            "is_read": false,
+            "created_at": "2026-07-03T14:29:31+02:00"
+        }
+    ],
+    "activity_logs": [],
+    "settings": {
+        "business_name": "TEQUILA BAR & RESTAURANT",
+        "address": "Base, Rulindo, Rwanda",
+        "phone": "0783063787",
+        "currency": "RWF",
+        "low_stock_alert_enabled": true,
+        "tax_rate": 18
+    },
+    "daily_reconciliations": [],
+    "suppliers": [],
+    "purchases": []
+}
